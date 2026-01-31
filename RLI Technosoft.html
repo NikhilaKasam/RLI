@@ -16,6 +16,7 @@ body{
   font-family:Arial, sans-serif;
   background:whitesmoke;
   padding-top:130px;
+  font-style: oblique;
 }
 
 /* ================= NAVBAR ================= */
@@ -52,15 +53,16 @@ body{
 
 /* MENU */
 .nav-menu{
-  position:absolute;
+  position:fixed;
   top:120px;
   right:20px;
   background:#0a2e6f;
   list-style:none;
-  width:200px;
+  width:160px;
   display:none;
-  border-radius:6px;
+  border-radius:8px;
   box-shadow:0 8px 20px rgba(0,0,0,0.4);
+  z-index: 99999;
 }
 
 .nav-menu li a{
@@ -86,11 +88,13 @@ body{
     height:60px;
   }
   .nav-menu{
+    position: fixed;
     top:80px;
     right:0;
     width:100%;
     border-radius:0;
     text-align: center;
+    z-index: 99999;
   }
   .slider img{
     height:250px;
@@ -157,7 +161,7 @@ body{
 .services-track{
   display:flex;
   width:max-content;
-  animation:scroll 25s linear infinite;
+  animation:scroll 50s linear infinite;
 }
 
 .services-wrapper:hover .services-track{
@@ -226,10 +230,10 @@ body{
 
   <ul class="nav-menu" id="navMenu">
     <li><a href="RLI Technosoft.html">Home</a></li>
-    <li><a href="profile.html">Profile</a></li>
+    <li><a href="About.html">About</a></li>
     <li><a href="clinets.html">Clients</a></li>
     <li><a href="services.html">Services</a></li>
-    <li><a href="contact.html">Contact</a></li>
+    <li><a href="contact.html">Contact us</a></li>
   </ul>
 </nav>
 
@@ -245,22 +249,12 @@ body{
 <!-- CLIENTS -->
 <h2 style="text-align:center;margin:40px 0;">Our Clients</h2>
 <div style="overflow:hidden;background:#f5f5f5;padding:20px 0;">
-  <div style="display:flex;width:max-content;animation:scroll 20s linear infinite;">
+  <div style="display:flex; gap: 40px; width:max-content;animation:scroll 25s linear infinite;">
     <img src="clinit.1.jpeg" height="80">
     <img src="clinit.2.jpeg" height="80">
     <img src="clinit.3.jpeg" height="80">
     <img src="clinit.4.jpeg" height="80">
     <img src="clinit.5.jpeg" height="80">
-    <img src="clinit.6.jpeg" height="80">
-    <img src="clinit.7.jpeg" height="80">
-    <img src="clinit.8.png" height="80">
-    <img src="clinit.1.jpeg" height="80">
-    <img src="clinit.2.jpeg" height="80">
-    <img src="clinit.3.jpeg" height="80">
-    <img src="clinit.4.jpeg" height="80">
-    <img src="clinit.5.jpeg" height="80">
-    <img src="clinit.6.jpeg" height="80">
-    <img src="clinit.7.jpeg" height="80">
     <img src="clinit.8.png" height="80">
   </div>
 </div>
@@ -290,31 +284,9 @@ body{
         <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4">
         <h3>Background Verification</h3>
       </div>
-      <div class="service-card" onclick="openService('Contract Staffing')">
-        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d">
-        <h3>Contract Staffing</h3>
-      </div>
-      <div class="service-card" onclick="openService('Permanent Staffing')">
-        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216">
-        <h3>Permanent Staffing</h3>
-        </div>
-      <div class="service-card" onclick="openService('RPO Services')">
-        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0">
-        <h3>RPO Services</h3>
-      </div>
-    <div class="service-card" onclick="openService('Talent Consulting')">
-        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d">
-        <h3>Talent Consulting</h3>
-      </div>
-    <div class="service-card" onclick="openService('Background Verification')">
-        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4">
-        <h3>Background Verification</h3>
-
-
-
-
-  </div>
+    </div>
 </section>
+
 
 <!-- POPUP -->
 <div id="popup">
@@ -338,7 +310,7 @@ body{
   </p>
 
   <p>
-    Address: 102, KRCR Colony, Bachupally, Hyderabad, Telangana - 500090
+    Address: KRCR Colony, Bachupally, Hyderabad, Telangana - 500090
   </p>
 
   <p>
@@ -347,7 +319,7 @@ body{
   </p>
   <p>
     Contact: <a href="tel:9848465666" style="color:#ffd700; text-decoration:none;">
-    +91 9848465666
+    +91 9440962900
     </a>
   </p>
 </footer>

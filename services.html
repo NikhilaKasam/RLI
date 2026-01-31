@@ -15,6 +15,7 @@ body{
   font-family:Arial, sans-serif;
   background:whitesmoke;
   padding-top:130px;
+  font-style: oblique;
 }
 
 /* ================= NAVBAR ================= */
@@ -110,7 +111,7 @@ body{
 .services-track{
   display:flex;
   width:max-content;
-  animation: scroll 25s linear infinite;
+  animation: step-endless 40s linear infinite;
 }
 
 .services-wrapper:hover .services-track{
@@ -197,7 +198,8 @@ body{
 
 /* ===== MOBILE ===== */
 @media(max-width:600px){
-  .service-card{ width:220px; }
+  .service-card{ width:220px; 
+  }
 }
 </style>
 </head>
@@ -216,10 +218,10 @@ body{
 
   <ul class="nav-menu" id="navMenu">
     <li><a href="RLI Technosoft.html">Home</a></li>
-    <li><a href="profile.html">Profile</a></li>
+    <li><a href="About.html">About</a></li>
     <li><a href="clinets.html">Clients</a></li>
     <li><a href="services.html">Services</a></li>
-    <li><a href="contact.html">Contact</a></li>
+    <li><a href="contact.html">Contact us</a></li>
   </ul>
 </nav>
 <script>
@@ -269,16 +271,6 @@ function toggleMenu(){
         <h3>Training & Development</h3>
       </div>
 
-      <!-- DUPLICATE FOR SMOOTH SCROLL -->
-      <div class="service-card" onclick="openService('contract')">
-        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d">
-        <h3>Contract Staffing</h3>
-      </div>
-
-      <div class="service-card" onclick="openService('permanent')">
-        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216">
-        <h3>Permanent Staffing</h3>
-      </div>
 
     </div>
   </div>
@@ -376,7 +368,7 @@ wrap.addEventListener("touchmove",e=>{
   </p>
 
   <p>
-    Address: 102, KRCR Colony, Bachupally, Hyderabad, Telangana - 500090
+    Address:  KRCR Colony, Bachupally, Hyderabad, Telangana - 500090
   </p>
 
   <p>
@@ -386,8 +378,8 @@ wrap.addEventListener("touchmove",e=>{
   </p>
 
   <p>
-    Contact: <a href="tel:9848465666" style="color:#ffd700; text-decoration:none;">
-      9848465666
+    Contact: <a href="tel:9440962900" style="color:#ffd700; text-decoration:none;">
+      +91 9440962900
     </a>
   </p>
 
